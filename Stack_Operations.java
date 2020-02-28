@@ -33,4 +33,28 @@ class Stack
 			return true;
 		}
 	}
-	
+		
+	boolean pop()
+	{
+		if(top == -1)
+		{
+			System.out.println("Underflow !");
+			return false;
+		}
+		else
+		{
+			top--;
+			System.out.println("Item Popped");
+			return true;
+		}
+	}
+	void display()
+	{
+		System.out.println("Printing Stack Elements:");
+		for(int i = top;i >= 0;i--)
+		{
+			System.out.println(arr[i]);
+		}
+	}
+}
+
