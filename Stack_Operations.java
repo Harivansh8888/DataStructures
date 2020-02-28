@@ -58,3 +58,53 @@ class Stack
 	}
 }
 
+public class Stack_Operations
+{
+	public static void main(String args[])
+	{
+		int ch = 0;
+		Scanner sc = new Scanner(System.in);
+		Stack s = new Stack();
+		System.out.println("Stack Operations using Array");
+		System.out.println("------------------------------");
+		while (ch !=4)
+		{
+			System.out.println("Choose one:");
+			System.out.println("1.PUSH");
+			System.out.println("2.POP");
+			System.out.println("3.DISPLAY");
+			System.out.println("4.EXIT");
+			System.out.println("Enter your Choice");
+			ch = sc.nextInt();
+			switch(ch)
+			{
+				case 1:
+				{
+					s.push(sc);
+					break;
+				}
+				case 2:
+				{
+					s.pop();
+					break;
+				}
+				case 3:
+				{
+					s.display();
+					break;
+				}
+				case 4:
+				{
+					System.out.println("Exiting....");
+					System.exit(0);
+					break;
+				}
+				default:
+				{
+					System.out.println("Wrong Choice Entered !");
+					break;
+				}
+			}
+		}
+	}
+}
