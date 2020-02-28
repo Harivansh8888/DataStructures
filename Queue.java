@@ -49,3 +49,29 @@ class Queue
 		}
 	}
 	
+
+	public int peek()
+	{
+		if(isEmpty())
+		{
+			System.out.println("Underflow !");
+			System.exit(1);
+		}
+			return arr[front];
+	}
+	
+	public int size()
+	{
+		return count;
+	}
+	
+	public boolean isEmpty()
+	{
+		return (size()==0);
+	}
+	
+	public boolean isFull()
+	{
+		return (size()==capacity);
+	}
+	
